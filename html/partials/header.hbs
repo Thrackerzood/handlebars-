@@ -1,8 +1,28 @@
 <header>
    <nav>
       <ul>
-         <li><a href="/">Home</a></li>
-         <li><a href="/about">About</a></li>
+         {{#if home}}
+         <li class="active"><a href="/">Главная</a></li>
+         {{else}}
+         <li><a href="/">Главная</a></li>
+         {{/if}}
+
+         {{#if add}}
+         <li class="active"><a href="/add">Добавить</a></li>
+         {{else}}
+         <li><a href="/add">Добавить</a></li>
+         {{/if}}
+
+         {{#if info}}
+         <li class="active"><a href="/info">Информация</a></li>
+         {{else}}
+         <li><a href="/info">Информация</a></li>
+         {{/if}}
+         {{#if course}}
+         <li class="active"><a href="/course">Курсы</a></li>
+         {{else}}
+         <li><a href="/course">Курсы</a></li>  
+         {{/if}}
       </ul>
    </nav>
 </header>
