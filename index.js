@@ -14,6 +14,8 @@ const hbs = expHbr.create({
    extname: 'hbs',
 })
 
+app.use(express.static('html/public'))
+
 app.engine('hbs', hbs.engine)
 app.set('view engine', 'hbs')
 app.set('views', 'html')
@@ -24,3 +26,4 @@ app.get('/', (req, res) =>{
 app.get('/about', (req, res) =>{
    res.render('about')
 })
+
