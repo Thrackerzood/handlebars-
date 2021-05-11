@@ -9,3 +9,14 @@ header>nav>ul>li{padding:20px;transition: .5s;}
 header>nav>ul>li:hover{background-color:rgb(207, 96, 96);}
 header>nav>ul>li>a{color: rgb(255, 255, 255);font-family: 'Open Sans', sans-serif;font-size: 16px;padding: 20px;}
 .active{background-color:rgb(207, 96, 96);}
+
+
+.section-add{max-width: 100%;height: 900px;display: grid;grid-template: repeat(3,1fr)/repeat(1,1fr);justify-items: center;align-items: center;}
+.section-add_container{width: 95%;max-width: 800px;margin-top: 50px;}
+.input-add_1{width: 100%;outline: none;border: none;border-bottom: 2px solid rgb(107, 107, 107);padding: 20px;margin-top: 20px;}
+.input-add_1::placeholder{text-align: left;padding-bottom: 5px;font-size: 18px;font-family: 'Open Sans', sans-serif;}
+.input-add_1:focus::placeholder{opacity: 0;transition:  0.3s ease;}
+
+
+.input-add_2{padding: 10px;border: none;background: rgb(35, 121, 1);color: white;font-family: 'Open Sans', sans-serif;font-size: 14px;border-radius: 5px;margin-top:40px;}
+.input-add_2:hover{border: none;background-color:rgb(32, 78, 14);}
