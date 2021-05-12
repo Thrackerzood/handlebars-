@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-
+const uuid = require('uuid')
 
 class Course {
    constructor(title,price,img){
@@ -13,6 +13,7 @@ class Course {
          title: this.title,
          price: this.price,
          img: this.img,
+         id: uuid.v4()
       }
    }
    async save(){
@@ -46,6 +47,10 @@ class Course {
             }
          )
       })
+   }
+   static async getById(id){
+     const courses = await Course.getAll()
+     return courses.find(c => c.id === id)
    }
 }
 module.exports = Course

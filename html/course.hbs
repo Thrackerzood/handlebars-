@@ -1,1 +1,17 @@
-<p>Курсы</p>
+
+<section class="course">
+   <p class="courses">Курсы</p>
+      {{#if courses.length}}
+      {{#each courses}}
+<div class="course-price">
+   <a href="/course/{{id}}" class="href-courses">
+   <p  class="course-price_p1">{{title}}</p>
+   <p  class="course-price_p2">{{price}}</p>
+   <p  class="course-price_p3">{{img}}</p>
+   </a>
+      {{/each}}
+      {{else}}
+   <pre>Ничего не найдено</pre>
+      {{/if}}
+</div>      
+</section>
