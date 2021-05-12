@@ -4,10 +4,12 @@
       {{#if courses.length}}
       {{#each courses}}
 <div class="course-price">
-   <a href="/course/{{id}}" class="href-courses">
+   <a href="/course/{{id}}" class="href-courses" target="_blank">
    <p  class="course-price_p1">{{title}}</p>
+      <div class="img-wrapper">
+         <img src="{{img}}" alt="title">
+      </div>
    <p  class="course-price_p2">{{price}}</p>
-   <p  class="course-price_p3">{{img}}</p>
    </a>
       {{/each}}
       {{else}}
