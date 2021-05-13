@@ -14,6 +14,11 @@
 <section class="href">
    <a href="/course/{{id}}/edit?allow=true">редактировать</a>
    <a href="/course/{{id}}" class="href-courses" target="_blank">Узнать больше</a>
+   <form action="/card/add" method="POST" class="formAdd">
+      <input type="hidden" name="id" value="{{id}}">
+      <label for="btn"><p><a>Добавить</a></p></label>
+      <button id="btn" type="submit"></button>
+   </form> 
 </section>
 
 
