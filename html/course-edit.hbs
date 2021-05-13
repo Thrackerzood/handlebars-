@@ -1,0 +1,12 @@
+<h1 class="redact">Редактировать {{course.title}}</h1>
+
+<section class="section-add">
+   <section class="section-add_container">
+      <form action="/add" method="POST">
+         <input placeholder="НАЗВАНИЕ" type="text" class="input-add_1" name="title" value="{{course.title}}">
+               <input placeholder="ИНФОРМАЦИЯ" type="text" class="input-add_1" name="price" value="{{course.price}}">
+               <input placeholder="URL КАРТИНКИ" type="text" class="input-add_1" name="img" value="{{course.img}}">
+         <input type="submit" value="Отправить" class="input-add_2">
+      </form>
+   </section>
+</section>

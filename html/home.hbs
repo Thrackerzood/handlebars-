@@ -1,3 +1,19 @@
-<section class="home">
-   <p>Главная</p>
-</section>
+<div class="home">
+   <section class="allCourse">
+   <p>Добро пожаловать!</p>
+      {{#if courses.length}}
+      {{#each courses}}
+      <a href="/course/{{id}}">
+      <div>
+      <h1>{{title}}</h1>
+      <div class="img-wrapper">
+         <img src="{{img}}" class="">
+      </div>
+      </div>
+      </a>
+      {{/each}}
+      {{else}}
+   <pre>Ничего не найдено</pre>
+      {{/if}}
+   </section>
+</div>
